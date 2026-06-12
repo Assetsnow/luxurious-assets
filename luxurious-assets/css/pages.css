@@ -1,0 +1,291 @@
+/* ============================================================
+   INTERIOR PAGES CSS
+   Shared styles for all non-homepage pages
+   ============================================================ */
+
+/* ── Page Header ── */
+.page-header {
+  padding-top: 160px;
+  padding-bottom: var(--space-10);
+  background-color: var(--color-soft-black);
+  border-bottom: 1px solid rgba(161, 161, 166, 0.1);
+}
+
+.page-header-title {
+  margin-top: var(--space-2);
+  max-width: 700px;
+}
+
+.page-header-body {
+  margin-top: var(--space-3);
+  max-width: 640px;
+  font-size: var(--text-lg);
+}
+
+/* ── Form Page Layout ── */
+.form-page-section {
+  background-color: var(--color-deep-charcoal);
+}
+
+.form-page-inner {
+  max-width: var(--form-max-width);
+  margin: 0 auto;
+}
+
+.form-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.form-section-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+/* ── Empty State ── */
+.empty-state {
+  text-align: center;
+  padding: var(--space-15) var(--space-4);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.empty-state-heading {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-3);
+}
+
+.empty-state-body {
+  font-size: var(--text-base);
+  color: var(--color-cool-gray);
+}
+
+/* ── Sourcing Invite Block ── */
+.sourcing-invite-section {
+  background-color: var(--color-soft-black);
+}
+
+.sourcing-invite {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.sourcing-invite-heading {
+  font-size: var(--text-3xl);
+  margin-bottom: 0;
+}
+
+.sourcing-invite p {
+  font-size: var(--text-base);
+  max-width: 520px;
+}
+
+/* ── Inventory Framing ── */
+.inventory-framing {
+  font-size: var(--text-base);
+  color: var(--color-cool-gray);
+  max-width: 640px;
+  margin: 0 auto var(--space-8);
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* ── Load More ── */
+.load-more-wrap {
+  text-align: center;
+  padding-top: var(--space-8);
+}
+
+/* ── Submission Guidelines Block ── */
+.guidelines-section {
+  background-color: var(--color-soft-black);
+}
+
+.guidelines-inner {
+  max-width: var(--form-max-width);
+  margin: 0 auto;
+}
+
+.guidelines-heading {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-4);
+}
+
+.guidelines-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.guidelines-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.guidelines-list-item {
+  font-size: var(--text-sm);
+  color: var(--color-ivory);
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(161, 161, 166, 0.08);
+}
+
+/* ── About Page ── */
+.about-page-section {
+  background-color: var(--color-deep-charcoal);
+}
+
+.about-page-anchor-image {
+  width: 100%;
+  aspect-ratio: 21/9;
+  overflow: hidden;
+  margin-top: var(--space-8);
+}
+
+.about-page-anchor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+}
+
+.about-page-copy {
+  max-width: 720px;
+}
+
+.about-page-copy p + p {
+  margin-top: var(--space-3);
+}
+
+/* ── How We Work Pillars ── */
+.how-we-work-section {
+  background-color: var(--color-soft-black);
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pillar-card {
+  padding: var(--space-5);
+  border: 1px solid rgba(161, 161, 166, 0.1);
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.pillar-card-title {
+  font-size: var(--text-lg);
+  color: var(--color-ivory);
+  margin-bottom: var(--space-2);
+}
+
+.pillar-card p {
+  font-size: var(--text-sm);
+  line-height: 1.8;
+}
+
+/* ── What Clients Value ── */
+.clients-value-section {
+  background-color: var(--color-deep-charcoal);
+}
+
+/* ── Page Closing CTA ── */
+.page-closing-cta {
+  background-color: var(--color-soft-black);
+  text-align: center;
+}
+
+.page-closing-cta-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.page-closing-cta-inner h2 {
+  margin-bottom: 0;
+}
+
+/* ── Contact Page ── */
+.contact-info-block {
+  max-width: var(--form-max-width);
+  margin: 0 auto var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.contact-info-item {
+  font-size: var(--text-base);
+  color: var(--color-ivory);
+}
+
+.contact-info-item a {
+  color: var(--color-ivory);
+  transition: color var(--transition-base);
+}
+
+.contact-info-item a:hover {
+  color: var(--color-champagne-gold);
+}
+
+/* ── Legal Pages ── */
+.legal-section {
+  background-color: var(--color-deep-charcoal);
+}
+
+.legal-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.legal-content h2 {
+  font-size: var(--text-xl);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-2);
+}
+
+.legal-content p {
+  font-size: var(--text-base);
+  margin-bottom: var(--space-3);
+  line-height: 1.8;
+}
+
+.legal-updated {
+  font-size: var(--text-sm);
+  color: var(--color-cool-gray);
+  margin-bottom: var(--space-6);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1023px) {
+  .pillars-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header {
+    padding-top: 120px;
+  }
+
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page-anchor-image {
+    aspect-ratio: 16/9;
+  }
+}
