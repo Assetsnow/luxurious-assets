@@ -1,0 +1,718 @@
+/* ============================================================
+   HOMEPAGE CSS — Matches reference design
+   ============================================================ */
+
+.text-center { text-align: center; }
+
+.section-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #F5F1E8;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.section-subheading {
+  font-size: 1rem;
+  color: #A1A1A6;
+  max-width: 560px;
+  margin: -12px auto 48px;
+  line-height: 1.75;
+}
+
+/* ============================================================
+   HERO — Dark bg, text left, image right bleeding to edge
+   ============================================================ */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  max-height: 960px;
+  display: flex;
+  align-items: center;
+  background-color: #0B0B0D;
+  overflow: hidden;
+  padding-top: 90px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 32px 80px;
+}
+
+.hero-text {
+  max-width: 520px;
+}
+
+.hero-headline {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: #F5F1E8;
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+}
+
+.hero-subheadline {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #A1A1A6;
+  line-height: 1.75;
+  margin-bottom: 40px;
+  max-width: 420px;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-ctas .btn--primary {
+  background-color: #C8B37A;
+  color: #0B0B0D;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border-radius: 0;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 300ms ease-out;
+}
+
+.hero-ctas .btn--primary:hover { background-color: #B8A46A; }
+
+.hero-ctas .btn--secondary {
+  background-color: transparent;
+  color: #F5F1E8;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 28px;
+  border: 1px solid #F5F1E8;
+  border-radius: 0;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 300ms ease-out;
+}
+
+.hero-ctas .btn--secondary:hover { background-color: rgba(245,241,232,0.08); }
+
+.hero-image-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.65;
+}
+
+.hero-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    #0B0B0D 0%,
+    rgba(11,11,13,0.75) 35%,
+    rgba(11,11,13,0.15) 100%
+  );
+}
+
+/* ============================================================
+   ABOUT — Phase 5C
+   Dark bg. Two col. Text left, image right.
+   ============================================================ */
+
+.about-section {
+  background-color: #111114;
+  padding: 120px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.about-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #C8B37A;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.about-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #F5F1E8;
+  margin-bottom: 32px;
+  line-height: 1.2;
+}
+
+.about-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.about-body p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: #A1A1A6;
+  line-height: 1.8;
+}
+
+.about-image {
+  aspect-ratio: 4/5;
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============================================================
+   SERVICES — Phase 5D
+   Dark bg. Three equal cards.
+   ============================================================ */
+
+.services-section {
+  background-color: #0B0B0D;
+  padding: 120px 0;
+}
+
+.services-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.services-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #C8B37A;
+  text-align: center;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.services-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #F5F1E8;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.service-card {
+  padding: 40px 32px;
+  border: 1px solid rgba(161,161,166,0.12);
+  background-color: rgba(255,255,255,0.02);
+  transition: border-color 300ms ease-out;
+}
+
+.service-card:hover {
+  border-color: rgba(200,179,122,0.3);
+}
+
+.service-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 20px;
+  color: #C8B37A;
+}
+
+.service-card-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #F5F1E8;
+  margin-bottom: 16px;
+}
+
+.service-card-body {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: #A1A1A6;
+  line-height: 1.8;
+}
+
+.services-cta {
+  text-align: center;
+}
+
+/* ============================================================
+   FEATURED TIMEPIECES — Phase 5E
+   Slightly lighter bg. Three-col grid.
+   ============================================================ */
+
+.featured-section {
+  background-color: #111114;
+  padding: 120px 0;
+}
+
+.featured-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.featured-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #C8B37A;
+  text-align: center;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.featured-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #F5F1E8;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.watch-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.watch-card {
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.02);
+  border: 1px solid rgba(161,161,166,0.1);
+  transition: border-color 300ms ease-out, transform 300ms ease-out;
+  outline: none;
+}
+
+.watch-card:hover,
+.watch-card:focus-visible {
+  border-color: rgba(200,179,122,0.35);
+  transform: translateY(-4px);
+}
+
+.watch-card:focus-visible {
+  outline: 2px solid #C8B37A;
+  outline-offset: 2px;
+}
+
+.watch-card-image-wrap {
+  position: relative;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  background-color: #0B0B0D;
+}
+
+.watch-card-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms ease-out;
+}
+
+.watch-card:hover .watch-card-image-wrap img {
+  transform: scale(1.04);
+}
+
+.watch-card-status {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.watch-card-info {
+  padding: 20px 20px 24px;
+}
+
+.watch-card-brand {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #A1A1A6;
+  margin-bottom: 4px;
+}
+
+.watch-card-model {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.1rem;
+  color: #F5F1E8;
+  margin-bottom: 4px;
+}
+
+.watch-card-ref {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  color: #A1A1A6;
+  margin-bottom: 12px;
+}
+
+.watch-card-price {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  color: #C8B37A;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.featured-cta-block {
+  border-top: 1px solid rgba(161,161,166,0.12);
+  padding-top: 56px;
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.featured-cta-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #F5F1E8;
+  margin-bottom: 20px;
+}
+
+.featured-cta-block p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: #A1A1A6;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.featured-cta-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+/* ============================================================
+   PROCESS — Phase 5F
+   Dark bg. Four-step horizontal layout.
+   ============================================================ */
+
+.process-section {
+  background-color: #0B0B0D;
+  padding: 120px 0;
+}
+
+.process-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.process-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #C8B37A;
+  text-align: center;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.process-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #F5F1E8;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.process-subheading {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #A1A1A6;
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto 64px;
+  line-height: 1.75;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.process-step {
+  padding: 0 16px;
+}
+
+.process-step-number {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.5rem;
+  color: rgba(200,179,122,0.18);
+  line-height: 1;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.process-step-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  color: #F5F1E8;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.process-step-body {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  color: #A1A1A6;
+  line-height: 1.8;
+}
+
+.process-cta { text-align: center; }
+
+/* ============================================================
+   ADVISORY APPROACH — Phase 5H
+   Lighter dark bg. 2x2 grid.
+   ============================================================ */
+
+.advisory-section {
+  background-color: #111114;
+  padding: 120px 0;
+}
+
+.advisory-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.advisory-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #C8B37A;
+  text-align: center;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.advisory-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #F5F1E8;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.advisory-subheading {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #A1A1A6;
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto 56px;
+  line-height: 1.75;
+}
+
+.advisory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.advisory-pillar {
+  padding: 36px;
+  border: 1px solid rgba(161,161,166,0.1);
+  background-color: rgba(255,255,255,0.02);
+}
+
+.advisory-pillar-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.05rem;
+  color: #F5F1E8;
+  margin-bottom: 14px;
+  font-weight: 400;
+}
+
+.advisory-pillar p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: #A1A1A6;
+  line-height: 1.8;
+}
+
+/* ============================================================
+   CONTACT CTA — Phase 5I
+   Dark bg. Centered. Generous padding.
+   ============================================================ */
+
+.contact-cta-section {
+  background-color: #0B0B0D;
+  padding: 160px 0;
+  text-align: center;
+}
+
+.contact-cta-inner {
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.contact-cta-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #C8B37A;
+}
+
+.contact-cta-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #F5F1E8;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.contact-cta-body {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #A1A1A6;
+  line-height: 1.8;
+  max-width: 480px;
+}
+
+/* ============================================================
+   STATUS BADGES
+   ============================================================ */
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.status-badge::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.status-badge--available  { color: #C8B37A; }
+.status-badge--reserved   { color: #A1A1A6; }
+.status-badge--on-request { color: #A8926B; }
+
+/* ============================================================
+   REVEAL ANIMATIONS
+   ============================================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 500ms ease-out, transform 500ms ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 100ms; }
+.reveal-delay-2 { transition-delay: 200ms; }
+.reveal-delay-3 { transition-delay: 300ms; }
+.reveal-delay-4 { transition-delay: 400ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1023px) {
+  .about-grid { grid-template-columns: 1fr; gap: 48px; }
+  .about-image { aspect-ratio: 16/9; order: -1; }
+  .services-grid { grid-template-columns: 1fr; gap: 16px; }
+  .watch-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-steps { grid-template-columns: repeat(2, 1fr); }
+  .advisory-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 767px) {
+  .hero { padding-top: 68px; }
+  .hero-image-wrap { width: 100%; opacity: 0.3; }
+  .hero-image-overlay {
+    background: linear-gradient(to top, #0B0B0D 40%, rgba(11,11,13,0.6) 100%);
+  }
+  .about-section, .services-section, .featured-section,
+  .process-section, .advisory-section { padding: 64px 0; }
+  .about-grid, .services-section .container,
+  .featured-section .container, .process-section .container,
+  .advisory-section .container { padding: 0 20px; }
+  .watch-grid { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr; }
+  .contact-cta-section { padding: 80px 0; }
+}
